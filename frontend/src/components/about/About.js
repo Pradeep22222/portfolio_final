@@ -32,26 +32,23 @@ export const About = () => {
         </AboutImageContainer>
         <AboutDetailsContainer>
           <StyledParagraph>
-            My name is Bishal Karki, currently pursuing Bachelor of Information
-            Technology. I am a passionate front-end developer based in
+            I am Pradeep Kumar Dhital, a fresh IT graduate. I am a passionate MERN stack developer based in
             Australia.
           </StyledParagraph>
           <StyledParagraph>
             I love to design and create responsive websites or web apps from
             scratch. The technologies, tools and languages I am using to build
-            my projects are HTML, CSS, JavaScript, REACT JS, Bootstrap, Git and
-            GitHub, Figma, and VS Code.
+            my projects are HTML, CSS, JavaScript, REACT JS, Bootstrap, NodeJs with ExpressJs, MongoDb with mongoose, Git and
+            GitHub and VS Code.
           </StyledParagraph>
           <StyledParagraph>
-            I have eagerness to learn something new every day and I love to
-            share my knowledge to my fellow students and developers. And I am
-            looking forward to talk with you!
+            I love programming and enjoy learning something new everyday.
           </StyledParagraph>
           <Resume>
             <ResumeLink
               href={resume}
               icon={downloadIcon}
-              download="resume-bishal-karki"
+              download
             >
               Download Resume
             </ResumeLink>

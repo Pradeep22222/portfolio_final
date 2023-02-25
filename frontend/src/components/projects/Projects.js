@@ -24,14 +24,17 @@ export const Projects = () => {
       </SectionHeading>
       {/* =========== paragraph ============= */}
       <StyledParagraph dark="true" textAlign="center">
-        Selected projects I've worked on recently.{" "}
-        <StyledLink
-          href="https://github.com/bishalk21"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Want to see more?
-        </StyledLink>
+        <p>
+          Selected projects I recently worked on.
+          <a
+            href="https://github.com/Pradeep22222"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="link"
+          >
+            &nbsp; Want to see more?
+          </a>
+        </p>
       </StyledParagraph>
       {/* ========== Projects ========== */}
       <ProjectsContainer>

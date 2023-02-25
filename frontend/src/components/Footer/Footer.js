@@ -42,38 +42,52 @@ const Footer = () => {
       <FooterContacts>
         <FooterContact>
           <ContactHeader>Call me</ContactHeader>
-          <ContactLink href="tel:+61433982572">+61433982572</ContactLink>
+          <ContactLink href="tel:+61451644397">+61451644397</ContactLink>
         </FooterContact>
         <FooterContact>
           <ContactHeader>Social</ContactHeader>{" "}
           <FooterSocials>
             <ContactLink
-              href="https://github.com/bishalk21"
+              href="https://github.com/Pradeep22222"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-github"></i> Github
             </ContactLink>
             <ContactLink
-              href="https://www.linkedin.com/in/bishalk21"
+              href="https://www.linkedin.com/in/pradeepkumardhital/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-linkedin"></i> LinkedIn
             </ContactLink>
             <ContactLink
-              href="https://www.twitter.com/intime_73"
+              href="https://twitter.com/PradeepDhital3"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-twitter"></i> Twitter
             </ContactLink>
+            <ContactLink
+              href="https://www.instagram.com/p_k_dhee_taal/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram"></i> Insta
+            </ContactLink>
+            <ContactLink
+              href="https://www.facebook.com/pk.dheetaal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook"></i> Facebook
+            </ContactLink>
           </FooterSocials>
         </FooterContact>
         <FooterContact>
           <ContactHeader>Let's grab a coffee.</ContactHeader>
-          <ContactLink href="tel:+61433982572">
-            karkibishal00@gmail.com
+          <ContactLink href="mailto:pradeepdhital124@gmail.com">
+            pradeepdhital124@gmail.com
           </ContactLink>
         </FooterContact>
       </FooterContacts>
@@ -87,11 +101,11 @@ const Footer = () => {
         <small>
           &copy; Copyright {year},{" "}
           <Small
-            href="https://github.com/bishalk21"
+            href="https://github.com/Pradeep22222"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Bishal Karki
+            Pradeep Kumar Dhital
           </Small>
         </small>
       </Copyright>
