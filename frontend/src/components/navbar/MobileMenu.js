@@ -33,11 +33,11 @@ export const MobileMenu = ({ isOpen, toggle }) => {
           Blogs
         </MobileMenuLink>
         <MobileButton
-          href="mailto:karkibishal00@gmail.com"
+          href="mailto:pradeepdhital124@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
-          <span>
+          <span className="email_me">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,21 +48,21 @@ export const MobileMenu = ({ isOpen, toggle }) => {
               >
                 <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
               </svg>
-              get in touch
+              Email Me
             </span>
           </span>
         </MobileButton>
       </MobileMenuList>
       <MobileSocials>
         <MobileSocial
-          href="mailto:karkibishal00@gmail.com"
+          href="mailto:pradeepdhital124@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i class="fa-solid fa-envelope"></i> GM
         </MobileSocial>
         <MobileSocial
-          href="https://github.com/monciego"
+          href="https://github.com/Pradeep22222"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -70,14 +70,14 @@ export const MobileMenu = ({ isOpen, toggle }) => {
         </MobileSocial>
 
         <MobileSocial
-          href="https://www.linkedin.com/in/bishalk21/"
+          href="https://www.linkedin.com/in/pradeepkumardhital/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fab fa-linkedin"></i> LI
         </MobileSocial>
       </MobileSocials>
-      <MobileQuote>Namaste 🙏</MobileQuote>
+      <MobileQuote>Hi 👋</MobileQuote>
     </MobileMenuContainer>
   );
 };

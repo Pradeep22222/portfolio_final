@@ -29,9 +29,9 @@ const Home = () => {
         <Name>
           <span className="iam"> Hello 👋, I'm</span>
           <br />
-          Bishal Karki
+          Pradeep Kumar Dhital
         </Name>
-        <Title>Front-end Developer</Title>
+        <Title>MERN Stack Developer</Title>
 
         <p>
           I <span className="change-text"></span>{" "}
@@ -44,7 +44,7 @@ const Home = () => {
           <span className="responsive">s</span>
           <span className="responsive">i</span>
           <span className="responsive">v</span>
-          <span className="responsive">e</span> websites.
+          <span className="responsive">e</span> web applications.
         </p>
         <StyledButtonsContainer>
           <StyledButton
@@ -78,36 +78,40 @@ const Home = () => {
         </StyledButtonsContainer>
         <Line />
         <Greeting>
-          have a great
+          Wishing you a great
           <span>
-            {hour < 12 ? " morning" : hour < 18 ? " afternoon" : " evening"}
+            {hour < 12
+              ? " morning ☕"
+              : hour < 18
+              ? " afternoon 🌞"
+              : " evening 🌙"}
           </span>
-          .
+          
         </Greeting>
         <Socials>
           <Social
-            href="mailto:karkibishal00@gmail.com"
+            href="mailto:pradeepdhital124@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaEnvelope />
           </Social>
           <Social
-            href="https://github.com/bishalk21"
+            href="https://github.com/Pradeep22222"
             target="_blank"
             rel="noopener noreferrer"
           >
             <GoMarkGithub />
           </Social>
           <Social
-            href="https://www.linkedin.com/in/bishalk21"
+            href="https://www.linkedin.com/in/pradeepkumardhital/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <GrLinkedinOption />
           </Social>
         </Socials>
-        <Quote>Don't wish for it! Work for it!</Quote>
+        <Quote id="quote">Do not just wish, act !!</Quote>
       </StyledHome>
     </IconContext.Provider>
   );
