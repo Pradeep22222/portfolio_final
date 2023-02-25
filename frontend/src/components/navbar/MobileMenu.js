@@ -23,14 +23,17 @@ export const MobileMenu = ({ isOpen, toggle }) => {
         <MobileMenuLink to="home" onClick={toggle}>
           Home
         </MobileMenuLink>
+        <MobileMenuLink to="skills" onClick={toggle}>
+          Skills
+        </MobileMenuLink>
         <MobileMenuLink to="projects" onClick={toggle}>
           Projects
         </MobileMenuLink>
         <MobileMenuLink to="about" onClick={toggle}>
           About
         </MobileMenuLink>
-        <MobileMenuLink to="playground" onClick={toggle}>
-          Blogs
+        <MobileMenuLink to="contact" onClick={toggle}>
+          Contact
         </MobileMenuLink>
         <MobileButton
           href="mailto:pradeepdhital124@gmail.com"

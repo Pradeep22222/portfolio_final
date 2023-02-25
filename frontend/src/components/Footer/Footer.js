@@ -39,7 +39,7 @@ const Footer = () => {
           Need a developer?
         </FooterBigLink>
       </FooterBigLinkContainer>
-      <FooterContacts>
+      <FooterContacts id="contact">
         <FooterContact>
           <ContactHeader>Call me</ContactHeader>
           <ContactLink href="tel:+61451644397">+61451644397</ContactLink>

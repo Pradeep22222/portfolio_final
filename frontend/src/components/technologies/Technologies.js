@@ -10,7 +10,7 @@ import { iconsData } from "./icons";
 
 const Technologies = () => {
   return (
-    <TechnologiesContainer>
+    <TechnologiesContainer id="technologies">
       <TechnologiesHeader>Technologies I am familiar with</TechnologiesHeader>
 
       <TechnologiesIcons>

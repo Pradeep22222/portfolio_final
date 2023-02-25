@@ -21,3 +21,6 @@ code {
 #link, #link:hover, #link:active{
   color:blue;
 }
+.transform_up{
+  transform:translateY(-15px)
+}

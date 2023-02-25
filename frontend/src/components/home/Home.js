@@ -111,7 +111,7 @@ const Home = () => {
             <GrLinkedinOption />
           </Social>
         </Socials>
-        <Quote id="quote">Do not just wish, act !!</Quote>
+        <Quote id="quote">"Do not just wish, act !!"</Quote>
       </StyledHome>
     </IconContext.Provider>
   );
