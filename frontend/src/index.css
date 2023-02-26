@@ -85,6 +85,10 @@ code {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
+.project_card{
+  overflow: visible;
+
+}
 @media (max-width: 48em) {
  .icons > div {
 

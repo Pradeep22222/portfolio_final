@@ -19,10 +19,11 @@ const ProjectCardComponent = ({
   title,
   codeLink,
   liveLink,
+  content
 }) => {
   return (
     <IconContext.Provider value={{ size: "1rem" }}>
-      <ProjectCard>
+      <ProjectCard >
         <ProjectImage src={image} alt={title} />
         <ProjectTransitionImage src={transitionImage} alt={title} />
         <ProjectDetails>
@@ -43,6 +44,7 @@ const ProjectCardComponent = ({
             <BiLinkExternal />
             <LinkName>Live</LinkName>
           </ProjectLiveLink>
+          <p>{ content}</p>
         </ProjectDetails>
       </ProjectCard>
     </IconContext.Provider>

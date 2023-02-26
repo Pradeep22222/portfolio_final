@@ -20,6 +20,8 @@ export const projectsData = [
     title: "Simple Calculator",
     codeLink: "https://github.com/bishalk21/JS_Calculator",
     liveLink: "https://bishalk21.github.io/JS_Calculator/",
+    content:
+      "Main tasks are states handling, properties delegation, switching, deleting etc.",
   },
   {
     id: 2,

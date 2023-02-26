@@ -5,7 +5,7 @@ import {
   TechnologiesIcons,
   TechnologyIcon,
 } from "../../style/technologies/technologyStyle";
-import rest from "../../assets/icons/restapi.png"
+import rest from "../../assets/icons/restapi.png";
 import adobe from "../../assets/icons/adobe.png";
 import mongo from "../../assets/icons/mongodb.png";
 

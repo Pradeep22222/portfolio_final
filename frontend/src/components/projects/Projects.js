@@ -37,7 +37,7 @@ export const Projects = () => {
         </p>
       </StyledParagraph>
       {/* ========== Projects ========== */}
-      <ProjectsContainer>
+      <ProjectsContainer className="project_card">
         {projectsData.map((project) => {
           return <ProjectCardComponent key={project.id} {...project} />;
         })}
