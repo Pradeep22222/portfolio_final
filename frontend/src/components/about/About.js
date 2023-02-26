@@ -8,9 +8,9 @@ import {
   ResumeLink,
   StyledAbout,
 } from "../../style/about/AboutStyles";
-import myImage from "../../assets/me1.jpeg";
+import myImage from "../../assets/metransparent.png";
 // import myImage from "../../assets/me2.jpeg";
-import resume from "../../assets/bishalresume.pdf";
+import resume from "../../assets/PradeepKumarCVfinal.pdf";
 import downloadIcon from "../../assets/icons/download-icon.svg";
 import {
   SectionHeading,
@@ -27,25 +27,26 @@ export const About = () => {
         </SectionTitle>
       </SectionHeading>
       <AboutContent>
-        <AboutImageContainer>
-          <AboutImage src={myImage} />
+        <AboutImageContainer className="about_image-container">
+          <AboutImage className="about_image" src={myImage} />
         </AboutImageContainer>
         <AboutDetailsContainer>
           <StyledParagraph>
-            I am Pradeep Kumar Dhital, a fresh IT graduate. I am a passionate MERN stack developer based in
-            Australia.
+            I am Pradeep Kumar Dhital, a fresh IT graduate. I am a passionate
+            MERN stack developer based in Australia.
           </StyledParagraph>
           <StyledParagraph>
             I love to design and create responsive websites or web apps from
             scratch. The technologies, tools and languages I am using to build
-            my projects are HTML, CSS, JavaScript, REACT JS, Bootstrap, NodeJs with ExpressJs, MongoDb with mongoose, Git and
-            GitHub and VS Code.
+            my projects are HTML, CSS, JavaScript, REACT JS, Bootstrap, NodeJs
+            with ExpressJs, MongoDb with mongoose, Git and GitHub and VS Code.
           </StyledParagraph>
           <StyledParagraph>
             I love programming and enjoy learning something new everyday.
           </StyledParagraph>
           <Resume>
             <ResumeLink
+              className=" button_resume"
               href={resume}
               icon={downloadIcon}
               download

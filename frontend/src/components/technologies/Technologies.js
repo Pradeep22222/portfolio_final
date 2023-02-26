@@ -5,27 +5,61 @@ import {
   TechnologiesIcons,
   TechnologyIcon,
 } from "../../style/technologies/technologyStyle";
+import rest from "../../assets/icons/restapi.png"
+import adobe from "../../assets/icons/adobe.png";
+import mongo from "../../assets/icons/mongodb.png";
 
 import { iconsData } from "./icons";
 
 const Technologies = () => {
   return (
     <TechnologiesContainer id="technologies">
-      <TechnologiesHeader>Technologies I am familiar with</TechnologiesHeader>
+      <TechnologiesHeader className="mb-5">
+        Technologies I am familiar with
+      </TechnologiesHeader>
 
-      <TechnologiesIcons>
-        {iconsData.map((iconData) => {
-          return (
-            <TechnologyIcon
-              key={iconData.id}
-              src={iconData.icon}
-              alt={iconData.name}
-              title={iconData.name}
-              {...iconData}
-            />
-          );
-        })}
-      </TechnologiesIcons>
+      <div className="icons fw-bolder d-flex flex-wrap justify-content-around">
+        <div className="skill_div">
+          <i className="fa-brands fa-html5 text-warning"></i>
+        </div>
+        <div className="skill_div">
+          <i className="fa-brands fa-css3-alt text-primary"></i>
+        </div>
+        <div className="skill_div">
+          <i className="fa-brands fa-js-square text-warning"></i>
+        </div>
+        <div className="skill_div">
+          <i className="fa-brands fa-bootstrap text-primary"></i>
+        </div>
+        <div className="skill_div">
+          <i className="fa-brands fa-sass  color_pink"></i>
+        </div>
+        <div className="skill_div">
+          <i className="fa-brands fa-github-square"></i>
+        </div>
+
+        <div className="skill_div">
+          <i className="fa-brands fa-react text-info"></i>
+        </div>
+        <div className="skill_div">
+          <i class="fa-brands fa-node text-success skill_div_item"></i>
+        </div>
+        <div className="skill_div">
+          <img src={rest} alt="" className="skills_pic rest_pic" />
+        </div>
+        <div className="skill_div">
+          <img src={mongo} alt="" className="skills_pic mongo_pic" />
+        </div>
+        <div className="skill_div">
+          <i className="fa-brands fa-git-alt color_git"></i>
+        </div>
+        <div className="skill_div">
+          <i className="fa-brands fa-npm color_npm"></i>
+        </div>
+        <div className="skill_div">
+          <img src={adobe} alt="" className="skills_pic adobe_pic" />
+        </div>
+      </div>
     </TechnologiesContainer>
   );
 };
