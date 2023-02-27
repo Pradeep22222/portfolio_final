@@ -27,7 +27,7 @@ export const AboutImageContainer = styled.div`
     position: absolute;
     top: -1rem;
     left: -1rem;
-    background: #fcdf3e;
+    // background: #fcdf3e;
     width: 100%;
     height: 100%;
     border-radius: 1px;
@@ -38,7 +38,7 @@ export const AboutImageContainer = styled.div`
     content: "";
     position: absolute;
     inset: 0 0 0 0;
-    background: rgb(13, 14, 14, 0.199);
+    // background: rgb(13, 14, 14, 0.199);
     z-index: 2;
   }
 

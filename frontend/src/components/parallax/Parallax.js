@@ -11,8 +11,7 @@ const ParallaxComponent = () => {
     <Parallax bgImage={parralaxImage} strength={-200} style={{ width: "100%" }}>
       <ParallaxContainer>
         <ParallaxText>
-          "No Sacrification means <br />
-         no achievements"
+          "Success is achieved with a series of risks, compromisations and sacrifications"
         </ParallaxText>
       </ParallaxContainer>
     </Parallax>

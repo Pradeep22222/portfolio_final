@@ -1,35 +1,26 @@
-// JS CALCULATOR
-import calculator1 from "../../assets/projects/js-calc-1.png";
-import calculator2 from "../../assets/projects/js-calc-2.png";
+// Country Details
+import countrydetails1 from "../../assets/Projectpic/countrydetails1.jpg";
+import countrydetails2 from "../../assets/Projectpic/countrydetails2.jpg";
 
 // REACT CALCULATOR
-import calculator3 from "../../assets/projects/react-calc-1.png";
-import calculator4 from "../../assets/projects/react-calc-2.png";
+import prankcalculator1 from "../../assets/Projectpic/prankcalculator1.jpg";
+import prankcalculator2 from "../../assets/Projectpic/prankcalculator2.jpg";
 
-// MOVIE LIST
-import movielist1 from "../../assets/projects/movie-list-1.png";
-import movielist2 from "../../assets/projects/movie-list-2.png";
+// DownSyndrome
+import downsyndrome1 from "../../assets/Projectpic/downsyndrome1.jpg";
+import downsyndrome2 from "../../assets/Projectpic/downsyndrome2.jpg";
 
-// NOT TO DO LIST APP
-import notToDo1 from "../../assets/projects/not-to-do-1.png";
-import notToDo12 from "../../assets/projects/not-to-do-2.png";
-
-// EXPENSE TRACKER
-import ft1 from "../../assets/projects/ET1.png";
-import ft2 from "../../assets/projects/ET2.png";
-import habitTracker from "../../assets/projects/habittracker.png";
-
+// Oasis fancy
+import oasis1 from "../../assets/Projectpic/oasis1.jpg";
+import oasis2 from "../../assets/Projectpic/oasis2.jpg";
 
 export {
-  calculator1,
-  calculator2,
-  calculator3,
-  calculator4,
-  movielist1,
-  movielist2,
-  notToDo1,
-  notToDo12,
-  ft1,
-  ft2,
-  habitTracker,
+  countrydetails1,
+  countrydetails2,
+  prankcalculator1,
+  prankcalculator2,
+  downsyndrome1,
+  downsyndrome2,
+  oasis1,
+  oasis2,
 };

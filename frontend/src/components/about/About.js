@@ -8,7 +8,7 @@ import {
   ResumeLink,
   StyledAbout,
 } from "../../style/about/AboutStyles";
-import myImage from "../../assets/metransparent.png";
+import myImage from "../../assets/profile_about.png";
 // import myImage from "../../assets/me2.jpeg";
 import resume from "../../assets/PradeepKumarCVfinal.pdf";
 import downloadIcon from "../../assets/icons/download-icon.svg";
