@@ -111,7 +111,7 @@ export const MobileButton = styled.a`
 
   &::before {
     content: "";
-    background: ${({ theme }) => theme.backgroundColor.purple};
+    background: ${({ theme }) => theme.backgroundColor.orange};
     transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
     transform-origin: 100% 50%;
   }

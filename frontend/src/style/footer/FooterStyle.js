@@ -214,7 +214,7 @@ export const ArrowToTop = styled.div`
   cursor: pointer;
 
   &:hover {
-    background: ${({ theme }) => theme.backgroundColor.purple};
+    background: ${({ theme }) => theme.backgroundColor.orange};
     background-image: url(${arrowUp});
     background-repeat: no-repeat;
     background-position: center center;

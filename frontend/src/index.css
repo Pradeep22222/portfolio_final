@@ -63,7 +63,7 @@ code {
   transform: translateY(-50px);
 }
 .button_resume {
-  background-color: burlywood;;
+  background-color:#e64e04;
   transition: all 0.3s ease-out;
   backface-visibility: hidden;
   position: relative;
@@ -79,7 +79,7 @@ code {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: burlywood;
+  background-color:#e64e04;
   z-index: -1;
   transition: all 0.7s;
   border-radius: 7rem;

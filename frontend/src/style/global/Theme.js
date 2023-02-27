@@ -14,6 +14,9 @@ export const theme = {
     white: "#ffffff",
     lightPurple: "rgb(207, 89, 230)",
     lightBlue: "#6BC5F8",
+    scarlet: "#B85042",
+    Light_teal: "#A7BEAE",
+    Light_olive: "#E7E8D1",
   },
   color: {
     dark: "#000000",

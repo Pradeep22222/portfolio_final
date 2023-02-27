@@ -92,7 +92,7 @@ export const Social = styled.a`
 
   &:hover {
     transform: translateY(-0.3125rem);
-    color: ${({ theme }) => theme.backgroundColor.lightBlue};
+    color: ${({ theme }) => theme.backgroundColor.orange};
   }
 
   &::after {
@@ -103,7 +103,7 @@ export const Social = styled.a`
     top: 50%;
     height: 0.5rem;
     width: 0.5rem;
-    background: ${({ theme }) => theme.backgroundColor.lightBlue};
+    background: ${({ theme }) => theme.backgroundColor.orange};
     border-radius: 2.8125rem;
     opacity: 0;
     transition: all 0.3s;
