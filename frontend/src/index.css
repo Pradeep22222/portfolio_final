@@ -1,28 +1,30 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.email_me{
-  font-size:1rem;
+.email_me {
+  font-size: 1rem;
 }
-#quote{
-  font-size:1rem;
-  color:rgb(230, 220, 220);
+#quote {
+  font-size: 1rem;
+  color: rgb(230, 220, 220);
 }
-#link, #link:hover, #link:active{
-  color:blue;
+#link,
+#link:hover,
+#link:active {
+  color: blue;
 }
-.transform_up{
-  transform:translateY(-15px)
+.transform_up {
+  transform: translateY(-15px);
 }
 .icons i {
   font-size: 2.5rem;
@@ -52,23 +54,24 @@ code {
 .text_mongo {
   display: inline-block;
   margin-top: -1rem;
-  transform:translateX(-3rem);
+  transform: translateX(-3rem);
 }
-.about_image{
-  transform:translateY(-9px)
+.about_image {
+  transform: translateY(-9px);
 }
-.about_image-container{
-  transform:translateY(-50px);}
-  .button_resume{
-    background-color: #2f8f9d;
+.about_image-container {
+  transform: translateY(-50px);
+}
+.button_resume {
+  background-color: burlywood;;
   transition: all 0.3s ease-out;
   backface-visibility: hidden;
   position: relative;
   z-index: 2;
   border-radius: 7rem;
   padding: 0.5rem 2rem;
-  }
-  .button_resume::after {
+}
+.button_resume::after {
   content: "";
   display: inline-block;
   width: 100%;
@@ -76,7 +79,7 @@ code {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #2f8f9d;
+  background-color: burlywood;
   z-index: -1;
   transition: all 0.7s;
   border-radius: 7rem;
@@ -85,14 +88,16 @@ code {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.project_card{
+.project_card {
   overflow: visible;
-
 }
 @media (max-width: 48em) {
- .icons > div {
-
-
-  margin: 1rem;
+  .icons > div {
+    margin: 1rem;
+  }
 }
+.project_title {
+  font-weight: bold;
+
+  font-style: italic;
 }

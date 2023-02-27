@@ -32,11 +32,11 @@ export const About = () => {
         </AboutImageContainer>
         <AboutDetailsContainer>
           <StyledParagraph>
-            I am Pradeep Kumar Dhital, a fresh IT graduate. I am a passionate
-            MERN stack developer based in Australia.
+            I am Pradeep Kumar Dhital, a fresh IT graduate and a passionate
+            MERN Stack developer based in Australia.
           </StyledParagraph>
           <StyledParagraph>
-            I love to design and create responsive websites or web apps from
+            I love to design and develop responsive websites or web apps from
             scratch. The technologies, tools and languages I am using to build
             my projects are HTML, CSS, JavaScript, REACT JS, Bootstrap, NodeJs
             with ExpressJs, MongoDb with mongoose, Git and GitHub and VS Code.
