@@ -18,12 +18,13 @@ import {
   Small,
   StyledFooter,
 } from "../../style/footer/FooterStyle";
+import { ContactForm } from "./ContactForm";
 
 const toTop = () => {
   scroll.scrollToTop({ delay: 0, duration: 0 });
 };
 
-const Footer = () => {
+const Footer = ({children}) => {
   const year = new Date().getFullYear();
   return (
     <StyledFooter>
@@ -38,6 +39,7 @@ const Footer = () => {
         >
           Need a developer?
         </FooterBigLink>
+        <ContactForm></ContactForm>
       </FooterBigLinkContainer>
       <FooterContacts id="contact">
         <FooterContact>
