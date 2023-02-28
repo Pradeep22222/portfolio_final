@@ -96,11 +96,11 @@ export const StyledNavLinks = styled(NavLink)`
 
 export const StyledCTA = styled.a`
   font-size: 0.625rem;
-  letter-spacing: 0.1875rem;
-  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
   transition: 0.3s ease;
   text-transform: uppercase;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem .2rem;
   background: ${({ theme }) => theme.backgroundColor.darkGray};
   transition: 0.3s ease;
   position: relative;

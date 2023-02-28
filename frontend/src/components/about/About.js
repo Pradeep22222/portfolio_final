@@ -20,7 +20,7 @@ import { StyledParagraph } from "../../style/projects/TypographyStyle";
 
 export const About = () => {
   return (
-    <StyledAbout id="about">
+    <StyledAbout>
       <SectionHeading dark="true" mb="3rem">
         <SectionTitle dark="true" number="02">
           About Me

@@ -37,6 +37,9 @@ export const theme = {
     secondary: "#4353ff",
   },
   breakpoints: {
+    aboutfirst: "109rem",
+    aboutsecond: "94.7rem",
+    aboutthird:"75.4rem",
     lg: "64rem",
     md: "58.125rem",
     sm: "48rem",

@@ -19,8 +19,7 @@ export const StyledButton = styled(Button)`
   border: 0;
   cursor: pointer;
 
-  background: ${(props) => (props.secondary ? "#4353ff" : "#8000ff")};
-
+  background: ${(props) => (props.secondary ? "#73a580" : "#347a6c")};
   @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: 0.85em;
     padding: 0 2.1875rem;

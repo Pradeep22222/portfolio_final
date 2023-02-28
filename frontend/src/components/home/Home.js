@@ -89,21 +89,21 @@ const Home = () => {
           
         </Greeting>
         <Socials>
-          <Social
+          <Social  
             href="mailto:pradeepdhital124@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaEnvelope />
           </Social>
-          <Social
+          <Social 
             href="https://github.com/Pradeep22222"
             target="_blank"
             rel="noopener noreferrer"
           >
             <GoMarkGithub />
           </Social>
-          <Social
+          <Social 
             href="https://www.linkedin.com/in/pradeepkumardhital/"
             target="_blank"
             rel="noopener noreferrer"
