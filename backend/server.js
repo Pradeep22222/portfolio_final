@@ -1,4 +1,6 @@
 import express from "express";
+import cors from "cors";
+import helmet from "helmet"
 import { dbConnect } from "./src/config/dbConfig.js";
 import messageRouter from "./src/routers/MessageRouter.js";
 // connecting database
@@ -8,6 +10,7 @@ const app = express();
 const PORT = 8000;
 
 // middlewares
+
 app.use((error, req, res, next) => {
   const status = error.status || 404;
   res.status(status).json({
@@ -16,9 +19,10 @@ app.use((error, req, res, next) => {
   });
 });
 app.use(express.json());
-
+app.use(cors());
+app.use(helmet());
 // handling router
-app.use("/", messageRouter);
+app.use("/api/v1/messages", messageRouter);
 app.use("/", (req, res, next) => {
   try {
     res.json({

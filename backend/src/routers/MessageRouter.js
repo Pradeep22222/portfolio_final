@@ -6,7 +6,7 @@ import {
 } from "../model/message/messageModel.js";
 const router = express.Router();
 
-router.get("/message", async (req, res, next) => {
+router.get("/", async (req, res, next) => {
   try {
     const result = await getMessages();
     res.json({
@@ -18,7 +18,7 @@ router.get("/message", async (req, res, next) => {
     next(error);
   }
 });
-router.post("/message", async (req, res, next) => {
+router.post("/", async (req, res, next) => {
   try {
     const result = await sendMessage(req.body);
     res.json({
@@ -30,9 +30,9 @@ router.post("/message", async (req, res, next) => {
     next(error);
   }
 });
-router.delete("/message", async(req, res, next) => {
+router.delete("/:_id", async(req, res, next) => {
   try {
-    const { _id } = req.body;
+    const { _id } = req.params;
     const result = await deleteMessage(_id);
     res.json({
       status: "success",

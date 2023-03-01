@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
+
 
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
@@ -12,7 +12,7 @@ export const Login = () => {
         <Row className="text-center ">
           <Col md={1} sm={0}></Col>
           <Col sm={6} md={5}>
-            <Form.Group className="mb-3" controlId="formBasicName">
+            <Form.Group className="mb-3" controlId="formBasicemail">
               <Form.Label > Email </Form.Label>
               <Form.Control
                 className="text-center"
@@ -23,7 +23,7 @@ export const Login = () => {
             </Form.Group>
           </Col>
           <Col sm={6} md={5}>
-            <Form.Group className="mb-3" controlId="formBasicName">
+            <Form.Group className="mb-3" controlId="formBasicpassword">
               <Form.Label> Password</Form.Label>
               <Form.Control
                 type="password"

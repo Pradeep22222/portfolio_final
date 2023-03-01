@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
+import { getAPIMessages } from "../../helpers/axiosHelper.js";
 
 export const Messages = () => {
+  const [messages,setMessages]=useState([])
+  const getMessageFromServer = async() => {
+    const data = await getAPIMessages();
+    data.status === "success" && setMessages(data.result);
+  }
+  console.log(messages)
+  useEffect(() => {
+    getMessageFromServer();
+  }, [])
+  const handleOnDelete = (e) => {
+    console.log(e.target.name)
+  }
   return (
     <div>
       <Table striped bordered hover className="text-center">
@@ -18,30 +31,26 @@ export const Messages = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdosfdfds </td>
-            <td>Mar dsfdsfds</td>
-            <td>sfdo</td>
-            <td>
-              <Button id="delete_button">Delete</Button>
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>
-              <Button id="delete_button">Delete</Button>
-            </td>
-          </tr>
+          {messages.map((e, i) => {
+            return (
+              <tr key={i}>
+                <td>{ i}</td>
+                <td>{ e.firstName}</td>
+                <td>{ e.lastName}</td>
+                <td>{e.email} </td>
+                <td>{ e.phone}</td>
+                <td>{ e.message}</td>
+                <td>
+                  <Button id="delete_button" name={e._id} onClick={handleOnDelete}>Delete</Button>
+                </td>
+              </tr>
+            );
+          })}
+          
+          
+          
         </tbody>
       </Table>
     </div>
   );
-}
+};

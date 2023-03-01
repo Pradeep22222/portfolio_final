@@ -110,8 +110,7 @@ code {
 }
 .required::after {
   content: "*";
-  font-size: 1.4rem;
-  transform: translateY(.3rem);
+  transform:scale(1.5);
   display: inline-block;
   color:#e64f04;
 }
