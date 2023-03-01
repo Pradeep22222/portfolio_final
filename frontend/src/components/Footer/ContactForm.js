@@ -8,19 +8,20 @@ export const ContactForm = () => {
       <Form className="mt-3">
         <Form.Text className="text-muted">Your details are kept safe</Form.Text>
         <Row>
-          <Col sm={2}></Col>
-          <Col sm={4}>
+          <Col md={1} sm={0}></Col>
+          <Col sm={6} md={5}>
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label> First Name</Form.Label>
+              <Form.Label className="required"> First Name</Form.Label>
               <Form.Control
                 className="text-center"
                 type="text"
                 placeholder="First Name"
+                required
               />
             </Form.Group>
           </Col>
 
-          <Col sm={4}>
+          <Col sm={6} md={5}>
             <Form.Group className="mb-3" controlId="formBasicName">
               <Form.Label> Last Name</Form.Label>
               <Form.Control
@@ -30,19 +31,20 @@ export const ContactForm = () => {
               />
             </Form.Group>
           </Col>
-          <Col sm={2}></Col>
-          <Col sm={2}></Col>
-          <Col sm={4}>
+          <Col md={1} sm={0}></Col>
+          <Col md={1} sm={0}></Col>
+          <Col sm={6} md={5}>
             <Form.Group className="mb-3" controlId="formBasicContact">
-              <Form.Label>Email Address</Form.Label>
+              <Form.Label className="required">Email Address</Form.Label>
               <Form.Control
                 className="text-center"
                 type="text"
                 placeholder="example@mail.com"
+                required
               />
             </Form.Group>
           </Col>
-          <Col sm={4}>
+          <Col sm={6} md={5}>
             <Form.Group className="mb-3" controlId="formBasicName">
               <Form.Label>Phone Number</Form.Label>
               <Form.Control
@@ -52,27 +54,28 @@ export const ContactForm = () => {
               />
             </Form.Group>
           </Col>
-          <Col sm={2}></Col>
-          <Col sm={2}></Col>
-          <Col sm={8}>
+          <Col md={1} sm={0}></Col>
+          <Col md={1} sm={0}></Col>
+          <Col sm={12} md={10}>
             <Form.Group className="mb-3" controlId="formBasicMessage">
-              <Form.Label>Message</Form.Label>
+              <Form.Label className="required">Message</Form.Label>
               <Form.Control
                 className="text-center"
                 as="textarea"
                 placeholder="Leave your message here please"
                 rows={3}
+                required
               />
             </Form.Group>
           </Col>
-          <Col sm={2}></Col>
-          <Col sm={2}></Col>
-          <Col sm={8}>
-            <Button id="message_button" variant="none">
+          <Col md={1} sm={0}></Col>
+          <Col md={1} sm={0}></Col>
+          <Col sm={12} md={10}>
+            <Button id="message_button" variant="none" type="submit">
               Send
             </Button>
           </Col>
-          <Col sm={2}></Col>
+          <Col md={1} sm={0}></Col>
         </Row>
       </Form>
     </div>
