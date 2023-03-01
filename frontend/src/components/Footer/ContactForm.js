@@ -17,6 +17,7 @@ export const ContactForm = () => {
                 type="text"
                 placeholder="First Name"
                 required
+                name="firstName"
               />
             </Form.Group>
           </Col>
@@ -28,6 +29,7 @@ export const ContactForm = () => {
                 type="text"
                 placeholder="Last Name"
                 className="text-center"
+                name="LastName"
               />
             </Form.Group>
           </Col>
@@ -41,6 +43,7 @@ export const ContactForm = () => {
                 type="text"
                 placeholder="example@mail.com"
                 required
+                name="email"
               />
             </Form.Group>
           </Col>
@@ -51,6 +54,7 @@ export const ContactForm = () => {
                 className="text-center"
                 type="text"
                 placeholder="Phone Number"
+                name="phone"
               />
             </Form.Group>
           </Col>
@@ -65,6 +69,7 @@ export const ContactForm = () => {
                 placeholder="Leave your message here please"
                 rows={3}
                 required
+                name="message"
               />
             </Form.Group>
           </Col>
