@@ -6,7 +6,21 @@ GET http://localhost:8000/message
 
 ### calling root url
 POST http://localhost:8000/message
+Content-Type: application/json
+
+{
+    "firstName":"Kumar",
+    "lastName":"Dhital",
+    "email":"example@gmail.com",
+    "phone":"94324929123",
+    "message":"Hey bud you are doing great job"
+}
 
 
 ### calling root url
 DELETE http://localhost:8000/message
+Content-Type: application/json
+
+{
+    "_id":"63ff25aef96ad793deb7c92a"
+}
