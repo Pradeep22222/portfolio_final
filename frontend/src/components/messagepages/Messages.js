@@ -13,9 +13,13 @@ export const Messages = () => {
   useEffect(() => {
     getMessageFromServer();
   }, [])
-  const handleOnDelete = async(e) => {
-    const _id = (e.target.name);
+  const handleOnDelete = async (e) => {
+    if (!window.confirm("Are you sure you want to delete this message?")) {
+      return;
+    } 
+    const _id = e.target.name;
     const result = await deleteAPIMessages(_id);
+    getMessageFromServer();
   }
   return (
     <div>
