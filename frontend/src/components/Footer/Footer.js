@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Link } from "react-router-dom";
 
 import { animateScroll as scroll } from "react-scroll";
 import {
@@ -24,10 +25,10 @@ const toTop = () => {
   scroll.scrollToTop({ delay: 0, duration: 0 });
 };
 
-const Footer = ({children}) => {
+const Footer = ({ children }) => {
   const year = new Date().getFullYear();
   return (
-    <StyledFooter>
+    <StyledFooter id="contact">
       <FooterSmallTitleWrapper>
         <FooterSmallTitle>get in touch</FooterSmallTitle>
       </FooterSmallTitleWrapper>
@@ -41,7 +42,7 @@ const Footer = ({children}) => {
         </FooterBigLink>
         <ContactForm></ContactForm>
       </FooterBigLinkContainer>
-      <FooterContacts id="contact">
+      <FooterContacts>
         <FooterContact>
           <ContactHeader>Call me</ContactHeader>
           <ContactLink href="tel:+61451644397">+61451644397</ContactLink>
@@ -100,16 +101,12 @@ const Footer = ({children}) => {
       </FooterArrowLine>
 
       <Copyright>
-        <small>
+        
           &copy; Copyright {year},{" "}
-          <Small
-            href="https://github.com/Pradeep22222"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Pradeep Kumar Dhital
-          </Small>
-        </small>
+          
+            <Link to="/login">Pradeep Kumar Dhital</Link>
+          
+        
       </Copyright>
     </StyledFooter>
   );
