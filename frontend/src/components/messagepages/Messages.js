@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
-import { getAPIMessages } from "../../helpers/axiosHelper.js";
+import { deleteAPIMessages, getAPIMessages } from "../../helpers/axiosHelper.js";
 
 export const Messages = () => {
   const [messages,setMessages]=useState([])
@@ -13,8 +13,9 @@ export const Messages = () => {
   useEffect(() => {
     getMessageFromServer();
   }, [])
-  const handleOnDelete = (e) => {
-    console.log(e.target.name)
+  const handleOnDelete = async(e) => {
+    const _id = (e.target.name);
+    const result = await deleteAPIMessages(_id);
   }
   return (
     <div>

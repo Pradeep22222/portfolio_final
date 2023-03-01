@@ -22,6 +22,7 @@ export const ContactForm = () => {
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     const result = await postAPIMessages(form);
+    setForm(initialState);
   };
   return (
     <div>
