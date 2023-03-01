@@ -14,6 +14,7 @@ export const getAPIMessages = async () => {
 export const postAPIMessages = async (obj) => {
   try {
     const { data } = await axios.post(apiEndPoint, obj);
+    return data;
   } catch (error) {
     return {
       status: "success",
@@ -24,7 +25,8 @@ export const postAPIMessages = async (obj) => {
 
 export const deleteAPIMessages = async (id) => {
   try {
-    const { data } = await axios.delete(apiEndPoint+ "/" + id);
+    const { data } = await axios.delete(apiEndPoint + "/" + id);
+    return data;
   } catch (error) {
     return {
       status: "success",

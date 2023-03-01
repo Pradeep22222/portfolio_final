@@ -21,11 +21,17 @@ router.get("/", async (req, res, next) => {
 router.post("/", async (req, res, next) => {
   try {
     const result = await sendMessage(req.body);
-    res.json({
-      status: "success",
-      message: "response from post method , message router",
-      result,
-    });
+    result._id
+      ? res.json({
+          status: "success",
+          message: "Thank you, will get back to you.",
+          result,
+        })
+      : res.json({
+          status: "error",
+          message: "Message couldn't be sent, please try again later",
+          result,
+        });
   } catch (error) {
     next(error);
   }

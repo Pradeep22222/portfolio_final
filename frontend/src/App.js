@@ -13,7 +13,8 @@ import Technologies from "./components/technologies/Technologies";
 import "./style/App.scss";
 import GlobalStyles from "./style/global/GlobalStyle";
 import { theme } from "./style/global/Theme";
-
+import { ToastContainer} from "react-toastify";
+  import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <BrowserRouter>
@@ -31,6 +32,18 @@ function App() {
       </ThemeProvider>
       <Login />
       <Messages></Messages>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="#e64e04"
+      />
     </BrowserRouter>
   );
 }

@@ -2,8 +2,12 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+ import {  toast } from "react-toastify";
 import { useState } from "react";
-import { postAPIMessages } from "../../helpers/axiosHelper.js";
+import {
+  postAPIMessages,
+  getAPIMessages,
+} from "../../helpers/axiosHelper.js";
 const initialState = {
   firstName: "",
   lastName: "",
@@ -22,7 +26,10 @@ export const ContactForm = () => {
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     const result = await postAPIMessages(form);
+    const { status, message } = result;
+    console.log(result.message);
     setForm(initialState);
+    toast[status](message)
   };
   return (
     <div>
