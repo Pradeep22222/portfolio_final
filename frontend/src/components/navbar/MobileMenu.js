@@ -62,7 +62,7 @@ export const MobileMenu = ({ isOpen, toggle }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-solid fa-envelope"></i> GM
+          <i className="fa-solid fa-envelope"></i> GM
         </MobileSocial>
         <MobileSocial
           href="https://github.com/Pradeep22222"

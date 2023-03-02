@@ -275,4 +275,3 @@ export const Copyright = styled.div`
   }
 `;
 
-export const Small = styled.a``;

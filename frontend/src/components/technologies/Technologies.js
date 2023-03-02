@@ -2,14 +2,10 @@ import React from "react";
 import {
   TechnologiesContainer,
   TechnologiesHeader,
-  TechnologiesIcons,
-  TechnologyIcon,
 } from "../../style/technologies/technologyStyle";
 import rest from "../../assets/icons/restapi.png";
 import adobe from "../../assets/icons/adobe.png";
 import mongo from "../../assets/icons/mongodb.png";
-
-import { iconsData } from "./icons";
 
 const Technologies = () => {
   return (
@@ -42,7 +38,7 @@ const Technologies = () => {
           <i className="fa-brands fa-react text-info"></i>
         </div>
         <div className="skill_div">
-          <i class="fa-brands fa-node text-success skill_div_item"></i>
+          <i className="fa-brands fa-node text-success skill_div_item"></i>
         </div>
         <div className="skill_div">
           <img src={rest} alt="" className="skills_pic rest_pic" />

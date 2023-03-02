@@ -27,7 +27,7 @@ export const Login = () => {
         <Row className="text-center ">
           <Col md={1} sm={0}></Col>
           <Col sm={6} md={5}>
-            <Form.Group className="mb-3" controlId="formBasicemail">
+            <Form.Group className="mb-3" controlId="formBasicloginemail">
               <Form.Label> Email </Form.Label>
               <Form.Control
                 className="text-center"
@@ -55,7 +55,7 @@ export const Login = () => {
           <Col md={1} sm={0}></Col>
 
           <Col sm={12} md={10}>
-            <Button id="message_button" variant="none" type="submit">
+            <Button id="login_button" variant="none" type="submit">
               Login
             </Button>
           </Col>

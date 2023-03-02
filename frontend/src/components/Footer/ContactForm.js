@@ -6,7 +6,6 @@ import Row from "react-bootstrap/Row";
 import { useState } from "react";
 import {
   postAPIMessages,
-  getAPIMessages,
 } from "../../helpers/axiosHelper.js";
 const initialState = {
   firstName: "",

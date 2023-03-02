@@ -8,7 +8,6 @@ import {
   SectionTitle,
 } from "../../style/projects/sectionHeading";
 import {
-  StyledLink,
   StyledParagraph,
 } from "../../style/projects/TypographyStyle";
 import ProjectCardComponent from "./projectCard";
@@ -24,7 +23,7 @@ export const Projects = () => {
       </SectionHeading>
       {/* =========== paragraph ============= */}
       <StyledParagraph dark="true" textAlign="center">
-        <p>
+        <>
           Selected projects I recently worked on.
           <a
             href="https://github.com/Pradeep22222"
@@ -34,7 +33,7 @@ export const Projects = () => {
           >
             &nbsp; Want to see more?
           </a>
-        </p>
+        </>
       </StyledParagraph>
       {/* ========== Projects ========== */}
       <ProjectsContainer className="project_card">

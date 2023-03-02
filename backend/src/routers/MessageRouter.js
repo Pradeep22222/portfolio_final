@@ -40,9 +40,13 @@ router.delete("/:_id", async (req, res, next) => {
   try {
     const { _id } = req.params;
     const result = await deleteMessage(_id);
+    result._id?
     res.json({
       status: "success",
-      message: "response from delete method , message router",
+      message: "The message has been deleted",
+    }):res.json({
+      status: "error",
+      message: "Couldnot delete the message",
     });
   } catch (error) {
     next(error);
