@@ -50,9 +50,6 @@ export const Navbar = () => {
             height="60px"
             className="transform_up"
           />
-          {/* <div className="myname">
-            <span>Bishal Karki</span>
-          </div> */}
         </div>
         <NavMenuList>
           <NavList>

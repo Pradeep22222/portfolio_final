@@ -22,6 +22,7 @@ export const ParallaxText = styled.h3`
   font-weight: 800;
   color: white;
   width: 100%;
+  font-style: italic;
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     font-size: 2.5rem;

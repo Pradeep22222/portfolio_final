@@ -119,7 +119,7 @@ export const Quote = styled.span`
   right: 25%;
   bottom: 30%;
   color: #94929d;
-  font-size: 0.63rem;
+  font-size: .63rem;
   font-weight: 500;
   letter-spacing: 0.125rem;
 

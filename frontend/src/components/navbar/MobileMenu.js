@@ -40,7 +40,7 @@ export const MobileMenu = ({ isOpen, toggle }) => {
           target="_blank"
           rel="noreferrer"
         >
-          <span className="email_me">
+          <span className="email_me_mobile">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ export const MobileMenu = ({ isOpen, toggle }) => {
           <i className="fab fa-linkedin"></i> LI
         </MobileSocial>
       </MobileSocials>
-      <MobileQuote>Hi 👋</MobileQuote>
+      <MobileQuote className="quote">"No commitment means no achievement!!"</MobileQuote>
     </MobileMenuContainer>
   );
 };

@@ -14,10 +14,17 @@ code {
 .email_me {
   font-size: 1rem;
 }
-#quote {
-  font-size: 1rem;
-  color: rgb(230, 220, 220);
+.email_me_mobile {
+   font-size: 1.5rem;
+  font-weight: 500;
+  color:white;
 }
+.quote {
+  font-size: 1rem;
+  color: rgb(179, 173, 173);
+  font-style: italic;
+}
+
 #link,
 #link:hover,
 #link:active {
@@ -33,8 +40,6 @@ code {
 .icons > div {
   display: flex;
   flex-direction: column;
-  /* padding: 1rem; */
-  /* margin: 1rem; */
 }
 .skills_pic {
   width: 2.5rem;
@@ -55,7 +60,6 @@ code {
   display: inline-block;
   margin-top: -1rem;
   transform: translateX(-3rem);
-  
 }
 
 .button_resume {
@@ -97,30 +101,31 @@ code {
 
   font-style: italic;
 }
-#message_button, #login_button {
+#message_button,
+#login_button {
   width: 100%;
   background-color: #e64f04;
   color: white;
   font-size: 1.2rem;
 }
-#delete_button{
+#delete_button {
   background-color: #e64f04;
 }
-#message_button:focus #login_button:focus {
+#message_button:focus #login_button {
   outline: none;
 }
 .required::after {
   content: "*";
-  transform:scale(1.5);
+  transform: scale(1.5);
   display: inline-block;
-  color:#e64f04;
+  color: #e64f04;
 }
-.center{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%)
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.link_white{
-  color:rgba(216, 212, 212, 0.655);
+.link_white {
+  color: rgba(216, 212, 212, 0.655);
 }

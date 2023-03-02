@@ -40,7 +40,7 @@ export const NavMenuList = styled.ul`
   list-style: none;
   gap: 1.5rem;
   flex: 1;
-  margin-left: 8rem;
+  margin-left: 1rem;
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     display: none;
@@ -50,7 +50,7 @@ export const NavMenuList = styled.ul`
 export const NavList = styled.li``;
 
 export const StyledNavLinks = styled(NavLink)`
-  font-size: 0.75rem;
+  font-size: .9rem;
   letter-spacing: 0.09375rem;
   color: ${({ theme }) => theme.color.lightGray};
   transition: 0.3s ease;
@@ -100,13 +100,14 @@ export const StyledCTA = styled.a`
   font-weight: 400;
   transition: 0.3s ease;
   text-transform: uppercase;
-  padding: 0.8rem .2rem;
+  padding: 0.8rem .5rem;
   background: ${({ theme }) => theme.backgroundColor.darkGray};
   transition: 0.3s ease;
   position: relative;
   overflow: hidden;
   color: ${({ theme }) => theme.color.white};
-
+  transform:translate(0,-.6rem);
+border-radius:2px;
   &::before,
   &::after {
     position: absolute;

@@ -86,24 +86,23 @@ const Home = () => {
               ? " afternoon 🌞"
               : " evening 🌙"}
           </span>
-          
         </Greeting>
         <Socials>
-          <Social  
+          <Social
             href="mailto:pradeepdhital124@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaEnvelope />
           </Social>
-          <Social 
+          <Social
             href="https://github.com/Pradeep22222"
             target="_blank"
             rel="noopener noreferrer"
           >
             <GoMarkGithub />
           </Social>
-          <Social 
+          <Social
             href="https://www.linkedin.com/in/pradeepkumardhital/"
             target="_blank"
             rel="noopener noreferrer"
@@ -111,7 +110,7 @@ const Home = () => {
             <GrLinkedinOption />
           </Social>
         </Socials>
-        <Quote id="quote">"Do not just wish, act !!"</Quote>
+        <Quote className="quote">""Donot just wish, act!!""</Quote>
       </StyledHome>
     </IconContext.Provider>
   );
