@@ -24,7 +24,7 @@ router.post("/", async (req, res, next) => {
     result._id
       ? res.json({
           status: "success",
-          message: "Thank you, will get back to you.",
+          message: "Thank you, will get back to you",
           result,
         })
       : res.json({
@@ -36,7 +36,7 @@ router.post("/", async (req, res, next) => {
     next(error);
   }
 });
-router.delete("/:_id", async(req, res, next) => {
+router.delete("/:_id", async (req, res, next) => {
   try {
     const { _id } = req.params;
     const result = await deleteMessage(_id);

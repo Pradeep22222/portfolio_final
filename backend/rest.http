@@ -1,15 +1,15 @@
 ### calling root url
 GET http://localhost:8000/
 
-### calling root url
+### Getting messages
 GET http://localhost:8000/api/v1/messages
 
-### calling root url
+### Posting message
 POST http://localhost:8000/api/v1/messages
 Content-Type: application/json
 
 {
-    "firstName":"jhaggu",
+    "firstName":"PK",
     "lastName":"Dhital",
     "email":"example@gmail.com",
     "phone":"94324929123",
@@ -17,5 +17,21 @@ Content-Type: application/json
 }
 
 
-### calling root url
+### Deleting message
 DELETE http://localhost:8000/api/v1/messages/63ff4140ebbd67514e8174f4
+
+
+###posting login details
+POST http://localhost:8000/api/v1/logins
+Content-Type: application/json
+
+{
+    "email":"djflsdfj@lkgfdsjlf",
+    "password":"f4234234213ldfjsdl"
+}
+
+
+### Getting logins
+Get http://localhost:8000/api/v1/logins
+Content-Type: application/json
+

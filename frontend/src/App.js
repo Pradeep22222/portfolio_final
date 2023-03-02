@@ -13,8 +13,8 @@ import Technologies from "./components/technologies/Technologies";
 import "./style/App.scss";
 import GlobalStyles from "./style/global/GlobalStyle";
 import { theme } from "./style/global/Theme";
-import { ToastContainer} from "react-toastify";
-  import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <BrowserRouter>
@@ -42,7 +42,7 @@ function App() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="#e64e04"
+        theme="colored"
       />
     </BrowserRouter>
   );
