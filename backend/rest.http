@@ -26,12 +26,11 @@ POST http://localhost:8000/api/v1/logins
 Content-Type: application/json
 
 {
-    "email":"djflsdfj@lkgfdsjlf",
+    "email":"demo is here",
     "password":"f4234234213ldfjsdl"
 }
 
 
 ### Getting logins
 Get http://localhost:8000/api/v1/logins
-Content-Type: application/json
 

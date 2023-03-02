@@ -3,12 +3,12 @@ const loginsSchema = new mongoose.Schema(
   {
     email: {
       type: String,
-      maxLength: 20,
+      maxLength: 40,
       required: true,
     },
     password: {
       type: String,
-      maxLength: 20,
+      maxLength: 40,
       required: true,
     },
   },

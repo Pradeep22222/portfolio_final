@@ -1,24 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from "react-bootstrap/Button";
 
 
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import { postAPILogins } from '../../helpers/axiosHelper.js';
 export const Login = () => {
+  const [form, setForm] = useState({});
+  const handleOnChange = (e) => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setForm({...form,[name]:value})
+  }
+  const handleOnSubmit = async(e) => {
+    e.preventDefault();
+    const result = await postAPILogins(form)
+    console.log(result)
+
+  }
+
   return (
     <div>
       {/* left to apply class center in the row below */}
+      <Form onSubmit={handleOnSubmit}>
         <Row className="text-center ">
           <Col md={1} sm={0}></Col>
           <Col sm={6} md={5}>
             <Form.Group className="mb-3" controlId="formBasicemail">
-              <Form.Label > Email </Form.Label>
+              <Form.Label> Email </Form.Label>
               <Form.Control
                 className="text-center"
-                type="text"
+                type="email"
                 placeholder="example@mail.com"
                 required
+                onChange={handleOnChange}
+                name="email"
               />
             </Form.Group>
           </Col>
@@ -29,6 +46,8 @@ export const Login = () => {
                 type="password"
                 placeholder="**********"
                 className="text-center"
+                onChange={handleOnChange}
+                name="password"
               />
             </Form.Group>
           </Col>
@@ -42,7 +61,7 @@ export const Login = () => {
           </Col>
           <Col md={1} sm={0}></Col>
         </Row>
-      
+      </Form>
     </div>
   );
 }
