@@ -81,7 +81,7 @@ export const MobileMenu = ({ isOpen, toggle }) => {
         </MobileSocial>
       </MobileSocials>
       <MobileQuote className="quote">
-        "Never giveup on yourself!!"
+        "Never giveup on yourself !!"
       </MobileQuote>
     </MobileMenuContainer>
   );

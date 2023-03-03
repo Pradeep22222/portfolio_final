@@ -1,6 +1,15 @@
+// not to do
+
 // Country Details
 import countrydetails1 from "../../assets/Projectpic/countrydetails1.jpg";
 import countrydetails2 from "../../assets/Projectpic/countrydetails2.jpg";
+
+
+
+//Movie Album 
+import moviefront from "../../assets/Projectpic/moviefront.png";
+import moviesecond from "../../assets/Projectpic/moviesecond.png";
+
 
 // REACT CALCULATOR
 import prankcalculator1 from "../../assets/Projectpic/prankcalculator1.jpg";
@@ -23,4 +32,6 @@ export {
   downsyndrome2,
   oasis1,
   oasis2,
+  moviefront,
+  moviesecond,
 };

@@ -7,6 +7,8 @@ import {
   downsyndrome2,
   oasis1,
   oasis2,
+  moviefront,
+  moviesecond,
 } from "./prjectImages";
 // import {countrydetails} from "../../assets/Projectpic"
 export const projectsData = [
@@ -31,8 +33,8 @@ export const projectsData = [
   },
   {
     id: 3,
-    image: prankcalculator1,
-    transitionImage: prankcalculator2,
+    image: moviefront,
+    transitionImage: moviesecond,
     title: "Movie Album || React",
     codeLink: "https://github.com/Pradeep22222/Movie-API-on-react",
     liveLink: "https://movie-api-on-react.vercel.app/",

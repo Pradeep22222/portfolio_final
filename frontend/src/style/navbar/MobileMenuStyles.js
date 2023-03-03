@@ -136,6 +136,7 @@ export const MobileQuote = styled.span`
   font-family: ${({ theme }) => theme.fonts.cardo};
   font-style: italic;
   position: absolute;
-  bottom: 2rem;
+  bottom: 2.2rem;
   left: 1.5rem;
+  font-size:.635rem;
 `;
