@@ -125,9 +125,9 @@ export const MobileButton = styled.a`
 export const MobileSocials = styled.div`
   position: absolute;
   bottom: 2rem;
-  right: 2.5rem;
+  right: 1.5rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 `;
 
 export const MobileSocial = styled.a``;
@@ -137,5 +137,5 @@ export const MobileQuote = styled.span`
   font-style: italic;
   position: absolute;
   bottom: 2rem;
-  left: 2.5rem;
+  left: 1.5rem;
 `;
