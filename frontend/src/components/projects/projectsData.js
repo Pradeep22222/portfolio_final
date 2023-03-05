@@ -9,13 +9,17 @@ import {
   oasis2,
   moviefront,
   moviesecond,
+  nottodofirst,
+  nottodosecond,
+  expensesfirst,
+  expensessecond
 } from "./prjectImages";
 // import {countrydetails} from "../../assets/Projectpic"
 export const projectsData = [
   {
     id: 1,
-    image: countrydetails1,
-    transitionImage: countrydetails2,
+    image: nottodofirst,
+    transitionImage: nottodosecond,
     title: "Not to do list || MERN ",
     codeLink: "https://github.com/Pradeep22222/not-to-do-list-ready-to-host",
     liveLink: "https://pradeep-not-to-do.herokuapp.com/",
@@ -50,7 +54,7 @@ export const projectsData = [
       "https://github.com/Pradeep22222/react-prank-calculator-with-prank",
     liveLink: "https://react-prank-calculator-with-prank.vercel.app/",
     content:
-      "Main task was  learning JavaScript functions well, handling functions and data flow.There is a little prank feature applied",
+      "Main task was  learning JavaScript functions well, handling functions and data flow.There is a little prank feature applied.",
   },
   {
     id: 5,
@@ -74,8 +78,8 @@ export const projectsData = [
   },
   {
     id: 7,
-    image: oasis1,
-    transitionImage: oasis2,
+    image: expensesfirst,
+    transitionImage: expensessecond,
     title: "Expenses Tracker || MERN",
     codeLink: "https://github.com/Pradeep22222/expenses-tracker-as-monolothic",
     liveLink: "https://expensestrackermonolothic.herokuapp.com/",
