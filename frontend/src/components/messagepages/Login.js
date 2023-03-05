@@ -1,24 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
-
 
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import { postAPILogins } from '../../helpers/axiosHelper.js';
+import { postAPILogins } from "../../helpers/axiosHelper.js";
+import { useNavigate } from "react-router";
 export const Login = () => {
+  const navigate = useNavigate();
   const [form, setForm] = useState({});
   const handleOnChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
-    setForm({...form,[name]:value})
-  }
-  const handleOnSubmit = async(e) => {
+    setForm({ ...form, [name]: value });
+  };
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
-    const result = await postAPILogins(form)
-    console.log(result)
-
-  }
+    return navigate("/messageBoard");
+    const result = await postAPILogins(form);
+    console.log(result);
+  };
 
   return (
     <div>
@@ -64,4 +65,4 @@ export const Login = () => {
       </Form>
     </div>
   );
-}
+};
