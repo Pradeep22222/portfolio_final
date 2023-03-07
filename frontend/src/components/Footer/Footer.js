@@ -1,5 +1,7 @@
 import React from "react";
-import {  Link } from "react-router-dom";
+import Button from "react-bootstrap/esm/Button";
+import {  Link, useNavigate } from "react-router-dom";
+import { useLongPress } from "use-long-press";
 
 import { animateScroll as scroll } from "react-scroll";
 import {
@@ -26,6 +28,14 @@ const toTop = () => {
 
 const Footer = ({ children }) => {
   const year = new Date().getFullYear();
+ 
+  const navigate = useNavigate();
+ const bind = useLongPress(() => {
+   navigate("/login");
+ });
+  const handleOnClick = (e) => {
+      console.log(e)
+  }
   return (
     <StyledFooter>
       <FooterSmallTitleWrapper>
@@ -102,9 +112,10 @@ const Footer = ({ children }) => {
         <Copyright>
           <small>
             &copy; Copyright {year},{" "}
-            <Link to="/login" className="link_white">
+            {/* <Link  className="link_white" onHol>
               Pradeep Kumar Dhital
-            </Link>
+            </Link> */}
+            <span className="opacity_0" {...bind()}>Pradeep Dhital</span>
           </small>
         </Copyright>
       </div>
