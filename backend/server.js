@@ -11,7 +11,7 @@ import loginsRouter from "./src/routers/loginRouter.js";
 dbConnect();
 
 const app = express();
-const PORT = 8000;
+// const PORT = 8000;
 const __dirName = path.resolve();
 // middlewares
 
@@ -42,7 +42,7 @@ app.use("/", (req, res, next) => {
 });
 
 // listening server
-app.listen(PORT, (error) => {
+app.listen(process.env.PORT || 8000, (error) => {
   error && console.log(error);
   console.log(`server running on port ${PORT}`);
 });
