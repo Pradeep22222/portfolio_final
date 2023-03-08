@@ -1,6 +1,6 @@
 import axios from "axios";
-const apiEndPointmessage = "http://localhost:8000/api/v1/messages";
-const apiEndPointLogins = "http://localhost:8000/api/v1/logins";
+const apiEndPointmessage = "api/v1/messages";
+const apiEndPointLogins = "api/v1/logins";
 
 export const getAPIMessages = async () => {
   try {

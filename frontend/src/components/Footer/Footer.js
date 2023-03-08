@@ -33,9 +33,6 @@ const Footer = ({ children }) => {
  const bind = useLongPress(() => {
    navigate("/login");
  });
-  const handleOnClick = (e) => {
-      console.log(e)
-  }
   return (
     <StyledFooter>
       <FooterSmallTitleWrapper>
@@ -112,9 +109,7 @@ const Footer = ({ children }) => {
         <Copyright>
           <small>
             &copy; Copyright {year},{" "}
-            {/* <Link  className="link_white" onHol>
-              Pradeep Kumar Dhital
-            </Link> */}
+           
             <span className="opacity_0" {...bind()}>Pradeep Dhital</span>
           </small>
         </Copyright>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { useLongPress } from "use-long-press";
 import Button from "react-bootstrap/Button";
-
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -14,17 +14,21 @@ export const Login = () => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
-  const handleOnSubmit = async (e) => {
-    e.preventDefault();
-    return navigate("/messageBoard");
-    const result = await postAPILogins(form);
-    console.log(result);
-  };
+  // const handleOnSubmit = async (e) => {
+  //   e.preventDefault();
+  //   return navigate("/messageBoard");
+  //   const result = await postAPILogins(form);
 
+  // };
+ const bind = useLongPress(async() => {
+   navigate("/messageBoard");
+    const result = await postAPILogins(form);
+
+ });
   return (
     <div>
       {/* left to apply class center in the row below */}
-      <Form className="center" onSubmit={handleOnSubmit}>
+      <Form className="center">
         <Row className="text-center ">
           <Col md={1} sm={0}></Col>
           <Col sm={6} md={5}>
@@ -56,7 +60,7 @@ export const Login = () => {
           <Col md={1} sm={0}></Col>
 
           <Col sm={12} md={10}>
-            <Button id="login_button" variant="none" type="submit">
+            <Button  {...bind()} id="login_button" variant="none" type="submit">
               Login
             </Button>
           </Col>

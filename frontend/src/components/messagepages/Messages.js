@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 import {
   deleteAPIMessages,
   getAPIMessages,
 } from "../../helpers/axiosHelper.js";
-
 export const Messages = () => {
   const [messages, setMessages] = useState([]);
   const getMessageFromServer = async () => {
     const data = await getAPIMessages();
     data.status === "success" && setMessages(data.result);
   };
-
   useEffect(() => {
     getMessageFromServer();
   }, []);
