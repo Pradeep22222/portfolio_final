@@ -11,7 +11,7 @@ import loginsRouter from "./src/routers/loginRouter.js";
 dbConnect();
 
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const __dirName = path.resolve();
 // middlewares
 
