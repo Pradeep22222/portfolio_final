@@ -38,7 +38,6 @@ export const Login = () => {
                 className="text-center"
                 type="email"
                 placeholder="example@mail.com"
-                required
                 onChange={handleOnChange}
                 name="email"
               />
