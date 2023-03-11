@@ -23,7 +23,7 @@ const messageSchema = new mongoose.Schema(
     },
     message: {
       type: String,
-      maxLength: 200,
+      maxLength: 10000,
       required: true,
     },
   },
