@@ -10,7 +10,7 @@ import {
 } from "../../style/about/AboutStyles";
 import myImage from "../../assets/profile_about.png";
 // import myImage from "../../assets/me2.jpeg";
-import resume from "../../assets/PradeepKumarCVfinal.pdf";
+import resume from "../../assets/PradeepKumarCV.pdf";
 import downloadIcon from "../../assets/icons/download-icon.svg";
 import {
   SectionHeading,

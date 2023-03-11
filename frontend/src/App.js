@@ -19,8 +19,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/messageBoard" element={<Messages />}></Route>
         </Routes>
-        <ToastContainer
-        />
+        <ToastContainer />
       </BrowserRouter>
     </ThemeProvider>
   );
